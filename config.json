@@ -1,0 +1,102 @@
+{
+  "enabled": true,
+  "disabledMessage": "지금은 점검 중이에요. 잠시 후 다시 시도해 주세요.",
+  "notice": "",
+  "minVersion": "1.0.0",
+  "latestVersion": "1.0.0",
+  "downloadUrl": "",
+  "selectors": {
+    "composer": [
+      "#prompt-textarea",
+      "div[contenteditable=\"true\"].ProseMirror",
+      "textarea[name=\"prompt-textarea\"]",
+      "form textarea"
+    ],
+    "sendBtn": [
+      "button[data-testid=\"send-button\"]",
+      "button[data-testid=\"composer-submit-button\"]",
+      "#composer-submit-button:not([data-testid=\"stop-button\"]):not([data-testid*=\"speech\"]):not([aria-label*=\"음성\"]):not([aria-label*=\"voice\" i])",
+      "button[aria-label*=\"Send\"]",
+      "button[aria-label*=\"보내기\"]",
+      "button[aria-label*=\"전송\"]"
+    ],
+    "stopBtn": [
+      "button[data-testid=\"stop-button\"]",
+      "form button[aria-label*=\"Stop\"]",
+      "form button[aria-label*=\"중지\"]"
+    ],
+    "fileInput": "input[type=\"file\"]",
+    "turn": "article[data-testid^=\"conversation-turn\"], [data-testid^=\"conversation-turn\"]",
+    "userMsg": "[data-message-author-role=\"user\"]",
+    "assistantMsg": "[data-message-author-role=\"assistant\"]",
+    "genImg": [
+      "img[src*=\"/backend-api/estuary/content\"]",
+      "img[src*=\"oaiusercontent.com\"]",
+      "img[alt*=\"Generated image\"]",
+      "img[alt*=\"생성된 이미지\"]"
+    ],
+    "composerArea": "form, [data-testid=\"composer\"]",
+    "uploading": "[role=\"progressbar\"], .animate-spin",
+    "generatingText": "(Creating image|Generating image|Image creation|이미지 생성 중|이미지를 생성하는 중|이미지를 만드는 중|이미지 만드는 중)",
+    "limitText": "(한도|사용량|limit|rate limit|too many|너무 많|잠시 후 다시|나중에 다시|다시 시도|try again|기다려 주|이후에)",
+    "policyText": "(정책|가이드라인|policy|guideline|허용되지|can't help|cannot help|도와드릴 수 없)"
+  },
+  "styles": [
+    {
+      "id": "diary",
+      "name": "다이어리 파스텔 인스타툰 (기본)",
+      "desc": "손그림 다이어리 코믹 스타일, 플랫한 파스텔 톤, 반실사풍의 흐릿하고 몽환적인 배경, 인물은 과슈 느낌의 차분하고 깊은 채색, 배경은 밝고 연하게 바랜 하이키 톤"
+    },
+    {
+      "id": "kwebtoon",
+      "name": "한국 웹툰 스타일",
+      "desc": "한국 웹툰 스타일, 깔끔한 디지털 선화, 셀 채색과 부드러운 그라데이션 명암, 또렷한 이목구비와 큰 눈, 선명하고 밝은 색감, 7~8등신"
+    },
+    {
+      "id": "simple",
+      "name": "인스타툰 심플 (2~3등신)",
+      "desc": "귀여운 2~3등신 인스타툰 스타일, 단순하고 굵은 선, 동글동글한 얼굴, 단색 위주의 플랫 채색, 여백 많은 단순한 배경"
+    },
+    {
+      "id": "watercolor",
+      "name": "수채화 동화풍",
+      "desc": "따뜻한 수채화 동화책 일러스트, 번지는 물감 질감, 부드러운 연필 선, 종이 질감, 포근한 색감"
+    },
+    {
+      "id": "anime",
+      "name": "일본 애니메이션풍",
+      "desc": "일본 TV 애니메이션 스타일, 선명한 선화, 2단 셀 음영, 큰 눈과 반짝이는 하이라이트, 맑은 하늘색 계열 배경"
+    },
+    {
+      "id": "3d",
+      "name": "3D 카툰 렌더링",
+      "desc": "3D 애니메이션 영화 같은 카툰 렌더링, 부드러운 조명, 둥근 형태의 귀여운 캐릭터, 풍부한 표정, 영화적인 색보정"
+    },
+    {
+      "id": "sketch",
+      "name": "연필 스케치 흑백",
+      "desc": "흑백 연필 스케치 만화, 거친 손그림 선, 해칭 명암, 회색 톤, 감성적인 일기장 느낌"
+    },
+    {
+      "id": "comics",
+      "name": "미국 코믹스",
+      "desc": "미국 코믹북 스타일, 굵은 잉크 외곽선, 하프톤 망점, 강한 명암 대비, 채도 높은 원색"
+    },
+    {
+      "id": "pastel",
+      "name": "파스텔 감성 일러스트",
+      "desc": "감성 파스텔 일러스트, 얇은 선, 연한 분홍·하늘·민트 톤, 부드러운 빛번짐, 아기자기한 소품"
+    },
+    {
+      "id": "retro",
+      "name": "90년대 레트로 만화",
+      "desc": "1990년대 한국·일본 순정/소년 만화 레트로 스타일, 셀 애니메이션 질감, 살짝 바랜 색감, 필름 그레인"
+    },
+    {
+      "id": "cinematic",
+      "name": "실사풍 시네마틱",
+      "desc": "실사에 가까운 시네마틱 디지털 페인팅, 사실적인 인물 비율, 드라마틱한 조명, 영화 스틸컷 같은 구도"
+    }
+  ],
+  "prompts": {}
+}
