@@ -5,6 +5,8 @@
   "minVersion": "1.0.0",
   "latestVersion": "1.0.0",
   "downloadUrl": "",
+  "passwordSalt": "sayeontoon-v1",
+  "passwordHash": "a787f7fd960dacb5e56904296747ac91ea0ac141374b41e443965294b1061e6d",
   "selectors": {
     "composer": [
       "#prompt-textarea",
