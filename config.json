@@ -1,7 +1,7 @@
 {
   "enabled": true,
   "disabledMessage": "지금은 점검 중이에요. 잠시 후 다시 시도해 주세요.",
-  "notice": "테스트 공지",
+  "notice": "",
   "minVersion": "1.0.0",
   "latestVersion": "1.0.0",
   "downloadUrl": "",
